@@ -1,0 +1,28 @@
+.products__header {
+    margin-top: 3rem;
+}
+
+.products-table, .products-table__th, .products-table__td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+  }
+
+.products-table__th {
+    text-align: left;
+}
+
+.products-table__td {
+    min-width: 3rem;
+}
+
+.products-table__th, .products-table__td {
+    padding: .5rem;
+}
+
+.products-table__tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.products-table__link {
+    text-decoration: none;
+}

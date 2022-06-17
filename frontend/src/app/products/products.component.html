@@ -1,0 +1,21 @@
+<div >
+    <h1 class="products__header">Products</h1>
+    <table class="products-table">
+        <thead>
+            <th class="products-table__th">ID</th>
+            <th class="products-table__th">Product</th>
+            <th class="products-table__th">Amount</th>
+        </thead>
+        <tbody>
+            <tr class="products-table__tr" *ngFor="let product of products">
+                <td class="products-table__td">{{ product.productId }}</td>  
+                <td class="products-table__td products-table__link">
+                    <a href="{{'products/' + product.productId}}">
+                        {{ product.productName }}
+                    </a>
+                </td>
+                <td class="products-table__td">{{ product.amount }}</td>    
+            </tr>
+        </tbody>
+    </table>
+</div>

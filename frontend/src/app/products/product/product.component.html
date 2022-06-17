@@ -1,0 +1,28 @@
+<div class="product-form">
+   <form #productForm="ngForm" (ngSubmit)="onUpdateProduct(productForm.value)">
+        <div class="form-group">       
+            <label class="form-label" for="title">ProductName</label>
+            <input
+                class="form-control" 
+                type="text" 
+                value="{{ product?.productName }}" 
+                name="productName" 
+                required 
+                ngModel>    
+        </div>
+        <div class="form-group"> 
+            <label class="form-label" for="title">Amount</label>                                
+            <input 
+                class="form-control"            
+                type="text" 
+                value="{{ product?.amount }}" 
+                name="amount" 
+                required 
+                ngModel>
+        </div>    
+        <div class="form-group__button">            
+            <button class="button button--primary" type="submit">Update</button> 
+            <button class="button button--danger" (click)="onRemoveProduct()">Remove</button> 
+        </div>                           
+   </form>                   
+</div>
